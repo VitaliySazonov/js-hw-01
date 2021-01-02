@@ -1,6 +1,6 @@
 let credits = 35500;
 let pricePerDroid = 300;
-let droidAmount = prompt('Количество дроидов');
+let droidAmount = prompt('Количество дроидов?');
 let totalPrice = droidAmount * pricePerDroid;
 
 console.log('================== TASK 4 =========================')
