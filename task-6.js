@@ -1,16 +1,17 @@
 let input;
 let total = 0;
+console.log('================== TASK 6 =========================')
 
 // Cancel -> alert 'Общая сумма чисел равна [сумма]'.
 // 'Было введено не число, попробуйте еще раз'
+// alert 'Общая сумма чисел равна [сумма]'
 
 let i = 1;
 input = Number(prompt("Number"));
 while(i > 0) {
   if (input) {
-    console.log("Number");
     total += input;
-    console.log(`Total - ${total}`)
+    console.log(`Number. Total - ${total}`)
     input = Number(prompt("Number"))
   }
   if (!input && input !== 0) {
@@ -19,6 +20,7 @@ while(i > 0) {
   }
   if (input === 0) {
     console.log(`Canceled. Total - ${total}`);
+    alert(`Общая сумма чисел равна ${total}`);
     break;
   }
   // console.log(typeof input, input)
